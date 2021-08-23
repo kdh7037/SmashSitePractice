@@ -1,1 +1,2 @@
-java -jar ./build/lib/xxx1.0.0SNAT-SHOT.jar
+web: java -Dserver.port=$PORT $JAVA_OPTS -jar gradle/wrapper/gradle-wrapper.jar
+
