@@ -1,1 +1,1 @@
-worker: python parsingPost.py
+worker: php index.php
