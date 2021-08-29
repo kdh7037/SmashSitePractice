@@ -17,18 +17,32 @@ ol{
   margin:0;
   padding:20px;
 }
-#grid{
-  display: grid;
-  grid-template-columns: 150px 1fr;
+.item-wrapper{
+    position: relative;
 }
-#grid ol{
+.main-image{
+    position: absolute;
+    opacity: 0.5;
+    min-width: 100%;
+}
+.main-text{
+    position: absolute;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+.header-grid{
+    grid-template-columns: 150px repeat(5, 1fr);
+}
+.grid ol{
   padding-left:33px;
 }
-#grid #article{
+.grid #article{
   padding-left:25px;
 }
 @media(max-width:800px){
-  #grid{
+  .grid{
     display: block;
   }
   ol{
